@@ -1,0 +1,39 @@
+:root {
+    --bg-gradient: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    --bg-body: rgb(34, 34, 34);
+    --font-size-title: 5rem;
+    --box-shadow-default: 10px 10px 10px lightgrey;
+    --text-color: red;
+}
+
+.light-theme {
+    background-color: #fafafa;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-body);
+    text-align: center;
+}
+
+h1 {
+    background: var(--bg-gradient);
+    font-size: var(--font-size-title);
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+    background: var(--bg-gradient);
+    padding: 9px 14px;
+    border-radius: 4px;
+    color: #fafafa;
+    --box-shadow-default: 10px 10px 10px lightgrey;
+}
+
+p {
+    color: var(--text-color, blue); /*Se nao existir text-color, usa o azul*/
+}
